@@ -1,0 +1,24 @@
+{
+  "name": "@mauriora/announcements-lists-deployment",
+  "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
+  "version": "0.0.2",
+  "private": true,
+  "main": "lib/index.js",
+  "author": {
+    "name": "Mauri-Ora",
+    "email": "dennis.kuhn@mauriora.co.nz"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build": "incrementVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json && gulp clean && gulp package-solution --ship",
+    "clean": "gulp clean"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@mauriora/spfx-packaging": "0.0.5",
+    "@microsoft/sp-build-web": "1.12.1",
+    "gulp": "^4.0.2"
+  }
+}

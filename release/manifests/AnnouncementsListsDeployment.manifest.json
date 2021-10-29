@@ -1,0 +1,10 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
+    "id": "662b6f8c-cc9c-428f-9d77-44af013172cd",
+    "alias": "Mauri-Ora-Rateable-Announcements-Lists",
+    "componentType": "Extension",
+    "extensionType": "ApplicationCustomizer",
+    "version": "0.0.2",
+    "manifestVersion": 2,
+    "requiresCustomScript": false
+}
