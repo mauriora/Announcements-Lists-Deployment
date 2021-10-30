@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/announcements-lists-deployment",
   "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
-  "version": "0.0.2",
+  "version": "0.0.11",
   "private": true,
   "main": "lib/index.js",
   "author": {
