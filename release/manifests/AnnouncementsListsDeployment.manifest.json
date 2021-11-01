@@ -4,7 +4,7 @@
     "alias": "Mauri-Ora-Rateable-Announcements-Lists",
     "componentType": "Extension",
     "extensionType": "ApplicationCustomizer",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "manifestVersion": 2,
     "requiresCustomScript": false
 }
