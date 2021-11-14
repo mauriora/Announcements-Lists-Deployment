@@ -3,7 +3,7 @@
     "solution": {
         "name": "Announcements Bar lists",
         "id": "7d6c4ed4-19ac-435a-b68c-77b93077ea8d",
-        "version": "0.0.23.0",
+        "version": "0.0.24.0",
         "includeClientSideAssets": false,
         "skipFeatureDeployment": false,
         "features": [
@@ -11,7 +11,7 @@
                 "title": "Announcements Bar lists",
                 "description": "Install on the one site per tenant. This package contains the 'Acknowledged Annoncements' list, 'Announcements' list and the 'Announcement Extended' content-type.",
                 "id": "8ed92262-1fa7-4904-9433-316cca2300dd",
-                "version": "0.0.23.0",
+                "version": "0.0.24.0",
                 "assets": {
                     "elementManifests": [
                         "../../../node_modules/@mauriora/model-announcement-extended/sharepoint/acknowledged-announcements-elements.xml",

@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/announcements-lists-deployment",
   "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "license": "MIT",
   "private": false,
   "main": "lib/index.js",
@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "@mauriora/model-announcement-extended": "^0.0.11",
-    "@mauriora/spfx-packaging": "^0.0.15"
+    "@mauriora/spfx-packaging": "^0.0.16"
   }
 }
