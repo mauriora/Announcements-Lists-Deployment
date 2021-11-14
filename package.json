@@ -3,7 +3,7 @@
   "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
   "version": "0.0.22",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "main": "lib/index.js",
   "author": {
     "name": "Mauri-Ora",
@@ -13,13 +13,14 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "incrementVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json && gulp clean && gulp package-solution --ship",
+    "version": "syncVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
+    "prepare": "yarn build",
+    "publish": "publishPackage git",
+    "build": "createPackage --no-bundle --ship",
     "clean": "gulp clean"
   },
   "devDependencies": {
     "@mauriora/model-announcement-extended": "^0.0.11",
-    "@mauriora/spfx-packaging": "^0.0.14",
-    "@microsoft/sp-build-web": "1.12.1",
-    "gulp": "^4.0.2"
+    "@mauriora/spfx-packaging": "^0.0.14"
   }
 }
