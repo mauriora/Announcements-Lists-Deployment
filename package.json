@@ -13,15 +13,15 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "incrementVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
+    "build": "createPackage --no-bundle --ship",
     "prepare": "yarn build",
     "publish": "publishPackage git",
-    "build": "createPackage --no-bundle --ship",
     "clean": "gulp clean"
   },
-  "dependencies": {},
   "devDependencies": {
     "@mauriora/model-announcement-extended": "0.0.3",
-    "@mauriora/spfx-packaging": "0.0.5"
+    "@mauriora/spfx-packaging": "^0.0.17",
+    "@microsoft/sp-build-web": "1.12.1",
+    "gulp": "^4.0.2"
   }
 }
