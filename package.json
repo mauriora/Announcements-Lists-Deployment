@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/announcements-lists-deployment",
   "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
-  "version": "0.0.12",
+  "version": "0.0.25",
   "license": "MIT",
   "private": true,
   "main": "lib/index.js",
@@ -13,6 +13,7 @@
     "node": ">=14.0.0"
   },
   "scripts": {
+    "version": "syncVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
     "build": "createPackage --no-bundle --ship",
     "prepare": "yarn build",
     "publish": "publishPackage git",
@@ -21,7 +22,7 @@
   "devDependencies": {
     "@mauriora/model-announcement-extended": "^0.0.11",
     "@mauriora/spfx-packaging": "^0.0.17",
-    "@microsoft/sp-build-web": "1.12.1",
+    "@microsoft/sp-build-web": "1.14.0",
     "gulp": "^4.0.2"
   }
 }
