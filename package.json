@@ -15,6 +15,7 @@
   "scripts": {
     "version": "syncVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
     "build": "createPackage --no-bundle --ship",
+    "rebuild": "createPackage --no-bundle --ship",
     "prepare": "yarn build",
     "publish": "publishPackage git",
     "clean": "gulp clean"
