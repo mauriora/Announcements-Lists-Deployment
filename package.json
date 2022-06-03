@@ -1,29 +1,33 @@
 {
-  "name": "@mauriora/announcements-lists-deployment",
-  "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
-  "version": "0.2.3",
-  "license": "MIT",
-  "private": true,
-  "main": "lib/index.js",
-  "author": {
-    "name": "Mauri-Ora",
-    "email": "dennis.kuhn@mauriora.co.nz"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "scripts": {
-    "version": "syncVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
-    "build": "createPackage --no-bundle --ship",
-    "rebuild": "createPackage --no-bundle --ship",
-    "prepare": "yarn build",
-    "publish": "publishPackage git",
-    "clean": "gulp clean"
-  },
-  "devDependencies": {
-    "@mauriora/model-announcement-extended": "^0.2.3",
-    "@mauriora/spfx-packaging": "^0.2.4",
-    "@microsoft/sp-build-web": "1.14.0",
-    "gulp": "^4.0.2"
-  }
+    "name": "@mauriora/announcements-lists-deployment",
+    "description": "Deploys the acknowledged announcements list, the extended announcements content type and list.",
+    "version": "0.2.3",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mauriora/Announcements-Lists-Deployment.git"
+    },
+    "license": "MIT",
+    "private": true,
+    "main": "lib/index.js",
+    "author": {
+        "name": "Mauri-Ora",
+        "email": "dennis.kuhn@mauriora.co.nz"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "scripts": {
+        "version": "syncVersions ./release/manifests/AnnouncementsListsDeployment.manifest.json",
+        "build": "createPackage --no-bundle --ship",
+        "rebuild": "createPackage --no-bundle --ship",
+        "prepare": "yarn build",
+        "publish": "publishPackage git",
+        "clean": "gulp clean"
+    },
+    "devDependencies": {
+        "@mauriora/model-announcement-extended": "^0.2.3",
+        "@mauriora/spfx-packaging": "^0.2.4",
+        "@microsoft/sp-build-web": "1.14.0",
+        "gulp": "^4.0.2"
+    }
 }
